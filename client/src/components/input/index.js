@@ -11,7 +11,7 @@ const Input = ({
   onChange = () =>{},
 }) => {
   return (
-    <div className="w-1/2">
+    <div className={` ${className}`}>
       <label for={name} className="block text-sm font-medium text-gray-800">
         {label}
       </label>

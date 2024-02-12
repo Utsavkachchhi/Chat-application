@@ -1,4 +1,5 @@
 import React from 'react'
+import Input from '../../components/input'
 
 const Dashboard = () =>  {
     const contacts = [
@@ -49,7 +50,7 @@ const Dashboard = () =>  {
 
 
         <div className='w-[50%] h-screen bg-white flex flex-col items-center'>
-           <div className='w-[75%] bg-secondary h-[80px] mt-14 rounded-full flex items-center px-14'>
+           <div className='w-[75%] bg-secondary h-[80px] my-14 rounded-full flex items-center px-14 shadow-md'>
               <div className='cursor-pointer'><img src='' width={60} height={60}/></div>
               <div className='ml-6 mr-auto'>
                  <h3 className='text-lg'>Hulk</h3>
@@ -62,7 +63,7 @@ const Dashboard = () =>  {
               </div>
            </div>
 
-           <div className='h-[75%]   w-full overflow-scroll'>
+           <div className='h-[75%] w-full overflow-scroll shadow-sx'>
              <div className='p-14'>
                <div className='max-w-[40%] bg-secondary rounded-b-xl rounded-tr-xl p-4 mb-6'> Lorem Ipsum is simply dummy text of the printing and typesetting industry</div>
                <div className='max-w-[40%] bg-primary rounded-b-xl rounded-tr-xl ml-auto p-4 text-white'>Lorem Ipsum is simply dummy text of the printing and typesetting industry</div>
@@ -73,8 +74,22 @@ const Dashboard = () =>  {
 
              </div>
            </div>
+           <div className='p-14 w-full flex items-center'>
+             <Input placeholder='Write a message...' className='w-[75%]' inputClassName='p-4 border-0 shadow-md rouned-full bg-light focus:ring-0 focus:border-0 outline-none' />
+             <div className='ml-4 p-2 cursor-pointer bg-light rounded-full'>
+             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+            <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
+            </svg>
+             </div>
+             <div className='p-14 w-full flex items-center'>
+             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+            </svg>
+             </div>
+           </div>
         </div>
-
+        
 
         <div className='w-[25%]   h-screen'></div>
     </div>
